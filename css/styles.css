@@ -1,6 +1,24 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  padding-top: 80px;
+  padding-top: 110px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 100px 0;
+    min-height: 100%;
+    background: no-repeat center center;
+    background-attachment: scroll;
+    background-color: #222;
+    background-size: cover;
 }
 
 .navbar {
@@ -9,18 +27,56 @@ body {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+@media (max-width: 400px) {
+    .navbar-header {
+        position: relative;
+    }
+    .navbar img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 70%;
+    }
+}
+
 .navbar-inverse .navbar-nav>li>a {
     color: #bbb;
-}
-.navbar img {
-    width: 70%;
-    height: 70%;
 }
 
 .cbp-af-header-shrink {
     padding-top: 5px;
     padding-bottom: 5px;
     opacity: 0.9;
+}
+
+.fill-screen {
+    background-size: cover;
+    background-position: center;
+}
+
+.content-filler {
+    min-height: 350px;
+}
+
+.fixed-attachment {
+    background-attachment: fixed;
+}
+@media (max-width: 1024px){
+    .fixed-attachment {
+        background-attachment: scroll;
+    }
+}
+
+.row1 {
+  background-image: url("../images/elk.jpg");
+  /*background-repeat: no-repeat;*/
+}
+
+.row2 {
+  background-image: url("../images/snowboarder.jpg");
+  /*background-repeat: no-repeat;*/
 }
 
 footer {
