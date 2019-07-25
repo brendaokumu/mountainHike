@@ -1,24 +1,6 @@
 body {
+  position: relative;
   font-family: 'Open Sans', sans-serif;
-  padding-top: 110px;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-header {
-    display: block;
-    position: relative;
-    width: auto;
-    height: auto;
-    padding: 100px 0;
-    min-height: 100%;
-    background: no-repeat center center;
-    background-attachment: scroll;
-    background-color: #222;
-    background-size: cover;
 }
 
 .navbar {
@@ -55,9 +37,36 @@ header {
     background-size: cover;
     background-position: center;
 }
+.fill-screen1 {
+  background-image: url("../images/lake-dark.jpg");
+  
+  background-size: cover;
+  background-position: center;
 
-.content-filler {
-    min-height: 350px;
+}
+
+.title-row {
+    position: relative;
+    min-height: 300px;
+}
+.title-image {
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.down-button {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.down-button i {
+    color: white;
 }
 
 .fixed-attachment {
@@ -77,6 +86,33 @@ header {
 .row2 {
   background-image: url("../images/snowboarder.jpg");
   /*background-repeat: no-repeat;*/
+}
+
+.text-banner {
+    text-align: center;
+    margin: 40px 20px;
+}
+.text-banner h1 {
+    font-size: 44px;
+}
+.text-banner p {
+    font-size: 18px;
+}
+
+.activity-section {
+    margin: 50px;
+}
+.activity-element {
+    text-align: center;
+}
+.activity-element img {
+    width: 150px;
+    height: 150px;
+}
+
+.contact-us {
+    margin: 50px;
+    text-align: center;
 }
 
 footer {
