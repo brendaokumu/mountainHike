@@ -37,13 +37,6 @@ body {
     background-size: cover;
     background-position: center;
 }
-.fill-screen1 {
-  background-image: url("../images/lake-dark.jpg");
-  
-  background-size: cover;
-  background-position: center;
-
-}
 
 .title-row {
     position: relative;
@@ -108,6 +101,14 @@ body {
 .activity-element img {
     width: 150px;
     height: 150px;
+}
+
+#carousel {
+    margin: 40px 0px;   /*40TB 0LR*/
+}
+#carousel img {
+    width: 100%;
+    height: auto;
 }
 
 .contact-us {

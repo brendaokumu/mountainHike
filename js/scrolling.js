@@ -19,4 +19,12 @@ $(function () {     //jquery DOM function
 
    // parallax scrolling with stellar.js
    $(window).stellar(); //select our window then select our stellar function
+
+   // initialize WOW for element animation
+    new WOW().init();
+
+    // initialize NanoGallery
+    $(document).ready(function () {
+        $("#nanoGallery3").nanoGallery();
+    });
 });
